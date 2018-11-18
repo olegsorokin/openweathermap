@@ -1,0 +1,5 @@
+.weather {text-align: center;
+  &-value {display: inline-block; vertical-align: middle; font-size: 10rem; font-weight: 300; line-height: 1;}
+  &-description {display: block; text-align: center;}
+  &-icon {vertical-align: middle; margin-right: 20px;}
+}

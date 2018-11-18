@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>strom</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#A9D9FF" offset="0%"></stop>
+            <stop stop-color="#7AC5FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFF3BC" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="strom" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="cloud" transform="translate(0.000000, -28.000000)" fill="url(#linearGradient-1)">
+            <path d="M47.2899719,79.0385582 C49.7446065,58.1809128 67.4826759,42 89,42 C103.835057,42 116.873693,49.6913914 124.345759,61.3040253 C127.975243,60.4511183 131.75896,60 135.647727,60 C162.904235,60 185,82.1619049 185,109.5 C185,136.838095 162.904235,159 135.647727,159 L53.0681818,159 C30.939136,159 13,141.007166 13,118.811881 C13,98.5846783 27.898815,81.8476962 47.2899719,79.0385582 Z" id="Combined-Shape"></path>
+        </g>
+        <polygon id="Path-3" fill="url(#linearGradient-2)" points="86 107 125.055513 107 102.994398 140 118 140 75 192 86 152.5 75 152.5"></polygon>
+    </g>
+</svg>

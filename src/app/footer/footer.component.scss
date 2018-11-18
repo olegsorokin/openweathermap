@@ -1,0 +1,9 @@
+.weather {
+  &-info {display: block; margin-bottom: 10px; color: rgba(255, 255,255, 0.4);}
+  &-value {display: block; font-size: 1.5rem;}
+
+  @media screen and (max-width: 767px) {
+    &-info {margin-bottom: 0;}
+    &-value {margin-bottom: 35px;}
+  }
+}
