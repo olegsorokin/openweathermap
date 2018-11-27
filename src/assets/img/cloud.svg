@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
-    <title>cloud</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
-            <stop stop-color="#A9D9FF" offset="0%"></stop>
-            <stop stop-color="#7AC5FF" offset="100%"></stop>
-        </linearGradient>
-    </defs>
-    <g id="cloud" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M47.2899719,79.0385582 C49.7446065,58.1809128 67.4826759,42 89,42 C103.835057,42 116.873693,49.6913914 124.345759,61.3040253 C127.975243,60.4511183 131.75896,60 135.647727,60 C162.904235,60 185,82.1619049 185,109.5 C185,136.838095 162.904235,159 135.647727,159 L53.0681818,159 C30.939136,159 13,141.007166 13,118.811881 C13,98.5846783 27.898815,81.8476962 47.2899719,79.0385582 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
-    </g>
-</svg>
+<svg height="200" viewBox="0 0 200 200" width="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0" stop-color="#a9d9ff"/><stop offset="1" stop-color="#7ac5ff"/></linearGradient><path d="m47.2899719 79.0385582c2.4546346-20.8576454 20.192704-37.0385582 41.7100281-37.0385582 14.835057 0 27.873693 7.6913914 35.345759 19.3040253 3.629484-.852907 7.413201-1.3040253 11.301968-1.3040253 27.256508 0 49.352273 22.1619049 49.352273 49.5 0 27.338095-22.095765 49.5-49.352273 49.5h-82.5795452c-22.1290458 0-40.0681818-17.992834-40.0681818-40.188119 0-20.2272027 14.898815-36.9641848 34.2899719-39.7733228z" fill="url(#a)" fill-rule="evenodd"/></svg>

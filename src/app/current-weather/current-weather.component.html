@@ -1,5 +1,5 @@
 <div class="weather">
-  <span class="icon-weather icon-weather-partly-cloudy weather-icon"></span>
-  <span class="weather-value">16<sup>o</sup></span>
-  <span class="weather-description">Преимущественно солнечно</span>
+  <span class="icon-weather weather-icon" [ngClass]="'icon-weather-' + weatherIcon"></span>
+  <span class="weather-value">{{ currentTemperature }}<sup>o</sup></span>
+  <span class="weather-description">{{ weather.weather[0].description }}</span>
 </div>

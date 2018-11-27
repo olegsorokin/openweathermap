@@ -1,18 +1,14 @@
 <div class="row">
-  <div class="col col-25 col-mobile-50">
+  <div class="col col-33 col-mobile-50">
     <span class="weather-info">Ветер</span>
-    <span class="weather-value"><strong>5</strong> м/c, западный</span>
+    <span class="weather-value"><strong>{{ windSpeed }}</strong> м/c, {{ windDirection }}</span>
   </div>
-  <div class="col col-25 col-mobile-50">
+  <div class="col col-33 col-mobile-50">
     <span class="weather-info">Давление</span>
-    <span class="weather-value"><strong>752</strong> мм рт. ст.</span>
+    <span class="weather-value"><strong>{{ pressure }}</strong> мм рт. ст.</span>
   </div>
-  <div class="col col-25 col-mobile-50">
+  <div class="col col-33 col-mobile-50">
     <span class="weather-info">Влажность</span>
-    <span class="weather-value"><strong>60%</strong></span>
-  </div>
-  <div class="col col-25 col-mobile-50">
-    <span class="weather-info">Вероятность дождя</span>
-    <span class="weather-value"><strong>10%</strong></span>
+    <span class="weather-value"><strong>{{ weather.main.humidity }}%</strong></span>
   </div>
 </div>

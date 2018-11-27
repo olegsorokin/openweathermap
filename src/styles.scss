@@ -133,7 +133,7 @@ sub {top: 1em;}
   &-rain {background-image: url('./assets/img/rain.svg');}
   &-storm {background-image: url('./assets/img/strom.svg');}
   &-sun {background-image: url('./assets/img/sun.svg');}
-  &-cold {background-image: url('./assets/img/cloud.svg');}
+  &-cloud {background-image: url('./assets/img/cloud.svg');}
   &-partly-cloudy {background-image: url('./assets/img/partly-cloudy.svg');}
 
   @media screen and (max-width: $mobile) {
@@ -164,4 +164,21 @@ sub {top: 1em;}
   &-item {width: 40px; padding: 5px; color: rgba(255, 255, 255, 0.4); line-height: 20px; text-align: center; box-sizing: border-box;
     &:hover, &:focus, &-active {background-color: rgba(255, 255, 255, 0.2); color: #fff;}
   }
+}
+
+/* spinner */
+.loading-spinner {position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0, 0, 0, 0.2); font-size: 0;
+  &:after {content:''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 40px; height: 40px; margin: auto;
+    border: rgba(255, 255, 255, 0.5) 5px dotted;
+    border-left-color: rgba(255, 255, 255, 0.3);
+    border-right-color: rgba(255, 255, 255, 0.7);
+    border-bottom-color: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    animation: loading-spinner 1.1s infinite linear;
+  }
+}
+
+@keyframes loading-spinner {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
 }

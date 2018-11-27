@@ -1,8 +1,24 @@
 <div class="location">
-  <span class="location-city">Омск</span>
-  <button class="empty-button location-change-button">Сменить город</button>
+  <span class="location-city">{{ currentCity }}</span>
+  <label for="cityInput"
+         tabindex="0"
+         class="empty-button location-change-button"
+         (click)="toggleCityInput = !toggleCityInput">
+    Сменить город
+  </label>
   <button class="empty-button location-determine-button">
     <span class="icon icon-geo"></span>
     Моё местоположение
   </button>
+
+  <div *ngIf="toggleCityInput" class="location-city-form">
+    <input (keyup.enter)="changeCurrentCity(cityInput.value)"
+           (keyup.esc)="toggleCityInput = !toggleCityInput"
+           type="text"
+           class="location-city-input"
+           id="cityInput"
+           #cityInput
+           value="{{ currentCity }}">
+    <button class="empty-button location-city-submit-button" (click)="changeCurrentCity(cityInput.value)">OK</button>
+  </div>
 </div>
