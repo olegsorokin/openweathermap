@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="19px" height="21px" viewBox="0 0 19 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
-    <title>Path 2</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.4">
-        <g id="iPad-Pro" transform="translate(-259.000000, -145.000000)" fill="#FFFFFF">
-            <g id="город" transform="translate(99.000000, 75.000000)">
-                <polygon id="Path-2" transform="translate(168.820557, 78.765273) rotate(11.000000) translate(-168.820557, -78.765273) " points="176.257812 68.5777728 161.383301 82.4596015 170.031234 82.4596015 175.863915 88.9527728"></polygon>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg height="21" viewBox="0 0 19 21" width="19" xmlns="http://www.w3.org/2000/svg"><path d="m176.257812 68.5777728-14.874511 13.8818287h8.647933l5.832681 6.4931713z" fill="#fff" fill-opacity=".4" fill-rule="evenodd" transform="matrix(.98162718 .190809 -.190809 .98162718 -141.869168 -100.765341)"/></svg>

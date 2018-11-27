@@ -1,2 +1,7 @@
-<app-location-toggle></app-location-toggle>
-<app-temperature-scale-toggle></app-temperature-scale-toggle>
+<app-location-toggle [currentCity]="currentCity"
+                     (updatedCity)="updatedCityHandler($event)">
+</app-location-toggle>
+
+<app-temperature-scale-toggle [currentTemperatureScale]="currentTemperatureScale"
+                              (updatedTemperatureScale)="updatedTemperatureScaleHandler($event)">
+</app-temperature-scale-toggle>

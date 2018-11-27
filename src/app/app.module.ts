@@ -7,7 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LocationToggleComponent } from './header/location-toggle/location-toggle.component';
 import { TemperatureScaleToggleComponent } from './header/temperature-scale-toggle/temperature-scale-toggle.component';
-import { WeatherService } from './weather.service';
+import { WeatherService } from './services/weather.service';
 import { CurrentWeatherComponent } from './current-weather/current-weather.component';
 
 @NgModule({

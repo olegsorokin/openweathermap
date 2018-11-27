@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,10 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  @Input('currentCity') currentCity;
+  @Input('currentTemperatureScale') currentTemperatureScale;
+  @Output('updatedCity') updatedCity: EventEmitter<any> = new EventEmitter();
+  @Output('updatedTemperatureScale') updatedTemperatureScale: EventEmitter<any> = new EventEmitter();
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
+  public updatedCityHandler(cityName: string): void {
+    this.updatedCity.emit(cityName);
+  }
+
+  public updatedTemperatureScaleHandler(temperatureScale: string): void {
+    this.updatedTemperatureScale.emit(temperatureScale);
+  }
 }

@@ -1,7 +1,15 @@
 <div class="weather-tab">
   <sub>o</sub>
   <div class="tab">
-    <button class="empty-button tab-item tab-item-active">C</button>
-    <button class="empty-button tab-item">F</button>
+    <button class="empty-button tab-item"
+            (click)="setMetric()"
+            [ngClass]="{ 'tab-item-active': currentTemperatureScale === 'metric' }">
+      C
+    </button>
+    <button class="empty-button tab-item"
+            (click)="setImperial()"
+            [ngClass]="{ 'tab-item-active': currentTemperatureScale === 'imperial' }">
+      F
+    </button>
   </div>
 </div>
