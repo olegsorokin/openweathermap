@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import {UnitsType} from '../../types/units.type';
 
 @Component({
   selector: 'app-temperature-scale-toggle',
@@ -7,7 +8,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class TemperatureScaleToggleComponent implements OnInit {
   @Input('currentTemperatureScale') currentTemperatureScale;
-  @Output('updatedTemperatureScale') updatedTemperatureScale: EventEmitter<any> = new EventEmitter();
+  @Output('updatedTemperatureScale') updatedTemperatureScale: EventEmitter<UnitsType> = new EventEmitter();
 
   constructor() { }
 

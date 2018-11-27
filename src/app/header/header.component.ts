@@ -8,6 +8,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class HeaderComponent implements OnInit {
   @Input('currentCity') currentCity;
   @Input('currentTemperatureScale') currentTemperatureScale;
+  @Input('errorMessage') errorMessage;
   @Output('updatedCity') updatedCity: EventEmitter<any> = new EventEmitter();
   @Output('updatedTemperatureScale') updatedTemperatureScale: EventEmitter<any> = new EventEmitter();
 

@@ -9,6 +9,7 @@ import { LocationToggleComponent } from './header/location-toggle/location-toggl
 import { TemperatureScaleToggleComponent } from './header/temperature-scale-toggle/temperature-scale-toggle.component';
 import { WeatherService } from './services/weather.service';
 import { CurrentWeatherComponent } from './current-weather/current-weather.component';
+import { GeolocationService } from './services/geolocation.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,10 @@ import { CurrentWeatherComponent } from './current-weather/current-weather.compo
     BrowserModule,
     HttpClientModule
   ],
-  providers: [WeatherService],
+  providers: [
+    WeatherService,
+    GeolocationService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

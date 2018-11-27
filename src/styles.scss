@@ -178,6 +178,8 @@ sub {top: 1em;}
   }
 }
 
+.error {display: block; padding: 5px 0; color: #efbcd5;}
+
 @keyframes loading-spinner {
   0% {transform: rotate(0deg);}
   100% {transform: rotate(360deg);}

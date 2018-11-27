@@ -6,10 +6,11 @@
          (click)="toggleCityInput = !toggleCityInput">
     Сменить город
   </label>
-  <button class="empty-button location-determine-button">
+  <button class="empty-button location-determine-button" (click)="getLocation()">
     <span class="icon icon-geo"></span>
     Моё местоположение
   </button>
+  <span class="error">{{ errorMessage }}</span>
 
   <div *ngIf="toggleCityInput" class="location-city-form">
     <input (keyup.enter)="changeCurrentCity(cityInput.value)"

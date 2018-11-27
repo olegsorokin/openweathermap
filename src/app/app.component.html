@@ -1,6 +1,7 @@
 <div *ngIf="weather" class="page-container">
   <header class="page-header">
     <app-header [currentCity]="currentCity"
+                [errorMessage]="errorMessage"
                 [currentTemperatureScale]="currentTemperatureScale"
                 (updatedCity)="updatedCityHandler($event)"
                 (updatedTemperatureScale)="updatedTemperatureScaleHandler($event)">

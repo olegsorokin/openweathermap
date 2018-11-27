@@ -27,10 +27,8 @@ export class FooterComponent implements OnInit, OnChanges {
 
     if (this.currentTemperatureScale === 'imperial') {
       this.windSpeed = Math.round(this.weather.wind.speed / 2.237);
-      // console.log('Converted!!!');
     } else {
       this.windSpeed = this.weather.wind.speed;
-      // console.log('No converted!!!');
     }
   }
 
