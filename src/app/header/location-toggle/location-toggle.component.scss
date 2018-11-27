@@ -7,4 +7,8 @@
     &-submit-button {font-size: 2.75rem; line-height: 1; color: #009bff;}
   }
   &-change-button {margin-right: 40px;}
+
+  @media screen and (max-width: 767px) {
+    &-city-input {width: 100%;}
+  }
 }

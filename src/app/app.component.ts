@@ -10,11 +10,18 @@ export class AppComponent implements OnInit {
   public weather;
   public currentCity: string;
   public currentTemperatureScale: string;
+  public errorMessage: string;
 
-  constructor(private _weatherService: WeatherService) {
-    this.currentCity = 'Москва';
+  constructor(
+    private _weatherService: WeatherService
+  ) {
+    if (localStorage.getItem('currentCity')) {
+      this.currentCity = localStorage.getItem('currentCity');
+    } else {
+      this.currentCity = 'Москва';
+    }
+
     this.currentTemperatureScale = 'metric';
-
     this.getWeatherOnCityChange(this.currentCity, this.currentTemperatureScale);
   }
 
@@ -24,9 +31,13 @@ export class AppComponent implements OnInit {
   private getWeatherOnCityChange(city: string, units: string): void {
     this._weatherService.getWeather(city, units)
       .subscribe((weather) => {
+        console.log(weather);
+        this.errorMessage = '';
         this.weather = weather;
-        console.log(this.weather);
-      });
+      },
+        () => {
+          this.errorMessage = 'Город не определён';
+        });
   }
 
   public updatedCityHandler(cityName: string): void {
