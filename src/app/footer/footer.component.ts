@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import * as lodash from 'lodash';
 
 @Component({
@@ -6,16 +6,12 @@ import * as lodash from 'lodash';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss']
 })
-export class FooterComponent implements OnInit, OnChanges {
+export class FooterComponent implements OnChanges {
   @Input('weather') weather;
   @Input('currentTemperatureScale') currentTemperatureScale;
   public windDirection: string;
   public windSpeed: number;
   public pressure: number;
-
-  constructor() {}
-
-  ngOnInit() {}
 
   ngOnChanges(changes: SimpleChanges) {
     this.initializeData();

@@ -5,7 +5,6 @@ import { Injectable } from '@angular/core';
 export class WeatherService {
   private weatherApiUrl = 'http://api.openweathermap.org/data/2.5/';
   private appId = '45f4dd45e0f724512ba044c5a2caf4bc';
-
   public cityName: string;
   public units: string;
   public lang: string;

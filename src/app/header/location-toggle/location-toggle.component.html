@@ -1,5 +1,8 @@
 <div class="location">
-  <span class="location-city">{{ currentCity }}</span>
+  <span class="location-city"
+        [style.visibility]="toggleCityInput ? 'hidden' : 'visible'">
+    {{ currentCity }}
+  </span>
   <label for="cityInput"
          tabindex="0"
          class="empty-button location-change-button"
@@ -19,6 +22,8 @@
            class="location-city-input"
            id="cityInput"
            #cityInput
+           appGooglePlaces
+           placeholder="Введите город"
            value="{{ currentCity }}">
     <button class="empty-button location-city-submit-button" (click)="changeCurrentCity(cityInput.value)">OK</button>
   </div>
