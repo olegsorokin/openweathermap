@@ -1,19 +1,14 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import {UnitsType} from '../../types/units.type';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { UnitsType } from '../../types/units.type';
 
 @Component({
   selector: 'app-temperature-scale-toggle',
   templateUrl: './temperature-scale-toggle.component.html',
   styleUrls: ['./temperature-scale-toggle.component.scss']
 })
-export class TemperatureScaleToggleComponent implements OnInit {
+export class TemperatureScaleToggleComponent {
   @Input('currentTemperatureScale') currentTemperatureScale;
   @Output('updatedTemperatureScale') updatedTemperatureScale: EventEmitter<UnitsType> = new EventEmitter();
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
   public setImperial(): void {
     if (this.currentTemperatureScale !== 'imperial') {

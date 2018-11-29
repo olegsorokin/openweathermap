@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { WeatherService } from './services/weather.service';
+import * as lodash from 'lodash';
 
 @Component({
   selector: 'app-root',
@@ -32,12 +33,13 @@ export class AppComponent implements OnInit {
     this._weatherService.getWeather(city, units)
       .subscribe((weather) => {
         console.log(weather);
+
         this.errorMessage = '';
         this.weather = weather;
       },
-        () => {
-          this.errorMessage = 'Город не определён';
-        });
+      () => {
+        this.errorMessage = 'Город не определён';
+      });
   }
 
   public updatedCityHandler(cityName: string): void {

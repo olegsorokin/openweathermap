@@ -10,6 +10,7 @@ import { TemperatureScaleToggleComponent } from './header/temperature-scale-togg
 import { WeatherService } from './services/weather.service';
 import { CurrentWeatherComponent } from './current-weather/current-weather.component';
 import { GeolocationService } from './services/geolocation.service';
+import { GooglePlacesDirective } from './directives/google-places.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { GeolocationService } from './services/geolocation.service';
     FooterComponent,
     LocationToggleComponent,
     TemperatureScaleToggleComponent,
-    CurrentWeatherComponent
+    CurrentWeatherComponent,
+    GooglePlacesDirective
   ],
   imports: [
     BrowserModule,
